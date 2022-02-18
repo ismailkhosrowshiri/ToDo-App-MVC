@@ -6,6 +6,9 @@ class View {
     this.addBtn = document.querySelector(".btn-add");
     this.complete_btn = document.querySelector(".complete");
     this.filterTodoParent = document.querySelector(".footer");
+    this.active_btn = document.querySelector(".active");
+    this.all_btn = document.querySelector(".all");
+    this.complete_btn = document.querySelector(".complete");
     this.statusTodo = "";
   }
 
@@ -100,12 +103,21 @@ class View {
     this.filterTodoParent.addEventListener("click", (e) => {
       if (e.target.classList.contains("all")) {
         this.statusTodo = "all";
+        this.all_btn.classList.add("clicked-class");
+        this.active_btn.classList.remove("clicked-class");
+        this.complete_btn.classList.remove("clicked-class");
         filterTodoStatus(this.statusTodo);
       } else if (e.target.classList.contains("complete")) {
         this.statusTodo = "complete";
+        this.all_btn.classList.remove("clicked-class");
+        this.active_btn.classList.remove("clicked-class");
+        this.complete_btn.classList.add("clicked-class");
         filterTodoStatus(this.statusTodo);
       } else if (e.target.classList.contains("active")) {
         this.statusTodo = "active";
+        this.all_btn.classList.remove("clicked-class");
+        this.active_btn.classList.add("clicked-class");
+        this.complete_btn.classList.remove("clicked-class");
         filterTodoStatus(this.statusTodo);
       }
     });
