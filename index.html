@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+    <title>ToDo List</title>
+    <meta
+      name="description"
+      content="Plan, manage and track all your  tasks in one flexible page.
+    What would you like to manage "
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-txt">ToDo List</h1>
+    </header>
+    <main class="continer">
+      <section>
+        <form class="search">
+          <h2 class="lbl-txt">search</h2>
+          <input class="form-control m-auto" type="text" name="search" placeholder="search todos" />
+        </form>
+        <form class="add text-center my-4">
+          <h2 class="lbl-txt">add new todo ...</h2>
+          <input class="form-control add-input m-auto" type="text" name="add" placeholder="Add a new todo..." />
+          <button type="" class="btn-add">add</button>
+        </form>
+      </section>
+      <section>
+        <ul class="ul-list"></ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <button class="all footer-btn">All</button>
+      <button class="active footer-btn">Active</button>
+      <button class="complete footer-btn">Complete</button>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
