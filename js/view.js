@@ -41,6 +41,7 @@ class View {
 
       if (edit === true) {
         todoListItemSpan.contentEditable = true;
+        todoListItemSpan.focus();
       }
     });
   }

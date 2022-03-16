@@ -3,6 +3,11 @@
   padding: 0;
   margin: 0;
 }
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
 body {
   font-family: "Ubuntu", sans-serif;
   background: url("../img/picography-laptop-notepad-pen-desk-small-1.jpg") no-repeat center center/cover;
@@ -11,7 +16,6 @@ body {
   font-family: "Pinyon Script", cursive;
   font-size: 80px;
   color: rgba(243, 243, 243, 0.8);
-
   text-align: center;
   margin: 5px auto;
 }
